@@ -98,31 +98,11 @@ footer .bc-info {
  * ----------------------------------------------------------------------------
  */
 
-.bc-banner {
-	background: url('img/bg.jpg') #e4eaea center center;
-	background-size: cover;
-}
-.banner-title {
-    color: #000;
-	margin: 2em 0 3em;
-	padding: 0.5em 1em;
-	background: #fff;
-	border-radius: 3px;
-}
-.loop-wrap article {
-    margin-bottom: 2em;
-}
-.loop-wrap .entry-content-loop {
-	padding: 1em;
+.banner {
 	background-color: #e4eaea;
-}
-.loop-wrap .entry-thumbnail {
-	max-height: 200px;
-	overflow: hidden;
-}
-.loop-wrap .btn-default {
-    color: #95a5a6;
-    background-color: #fff;
+	background-position: top center;
+	background-size: cover;
+	height: 440px;
 }
 .pager li>a, .pager li>span {
 	background-color: #95a5a6;
@@ -148,7 +128,7 @@ footer .bc-info {
  * ----------------------------------------------------------------------------
  */
 
-.bc-content {
+.content {
     padding: 2em 0;
 }
 
