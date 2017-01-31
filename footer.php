@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-lg-offset-2 text-center bc-info">
-        <p><small>Copyright © <?php echo date("Y"); ?> <br>
-           Blank Canvas with Bootstrap <br>
-          Theme by <a href="http://chrisbishop.me.uk/" target="_blank">Chris Bishop</a></small></p>
+        <p>Garden and Outdoor Spaces <br>
+          Copyright © <?php echo date("Y"); ?> <br>
+          <small>Website by <a href="http://creatistic.com.au//" target="_blank">Creatistic</a></small></p>
       </div>
     </div>
   </div>
