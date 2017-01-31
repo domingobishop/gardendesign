@@ -24,9 +24,9 @@ function bc_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bc_scripts' );
 
-add_action( 'after_setup_theme', 'register_my_menu' );
-function register_my_menu() {
-  register_nav_menu( 'primary', __( 'Navigation Menu', 'blankcanvas' ) );
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+    add_post_type_support( 'page', 'excerpt' );
 }
 
 // Replaces the excerpt "more" text by a link

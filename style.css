@@ -26,8 +26,7 @@ html, button, input, select, textarea {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #000;
+    color: #4b5793;
 }
 a {
 	color: #000;
@@ -100,13 +99,27 @@ footer .bc-info {
 
 .banner {
 	background-color: #e4eaea;
-	background-position: top center;
+	background-position: center center;
 	background-size: cover;
 	height: 440px;
 }
 .testimonial {
 	padding: 2em 0;
 	background-color: #e4eaea;
+}
+.blue-bg {
+	color: #fff;
+	background-color: #4b5793;
+}
+.green-bg {
+	color: #4b5793;
+	background-color: #a7dd17;
+}
+.blue-bg h2, .green-bg h2 {
+	color: #fff;
+}
+.green-bg h2 {
+	color: #4b5793;
 }
 .pager li>a, .pager li>span {
 	background-color: #95a5a6;
