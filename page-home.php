@@ -11,7 +11,7 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
             <?php if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
             } ?>
@@ -60,7 +60,7 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
             } ?>
@@ -96,7 +96,7 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
             } ?>
@@ -132,7 +132,7 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
             } ?>
@@ -168,7 +168,7 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
             } ?>
@@ -199,7 +199,7 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">'; ?>
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"'; ?>
                 <div class="banner" role="banner" <?php echo $bg_style; ?>>
                 </div>
             <?php } else {

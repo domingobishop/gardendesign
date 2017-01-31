@@ -121,6 +121,9 @@ footer .bc-info {
 .green-bg h2 {
 	color: #4b5793;
 }
+.content table td {
+	padding: 0 1em 1em 0;
+}
 .pager li>a, .pager li>span {
 	background-color: #95a5a6;
 	border-radius: 3px;
