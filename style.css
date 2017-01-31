@@ -104,6 +104,10 @@ footer .bc-info {
 	background-size: cover;
 	height: 440px;
 }
+.testimonial {
+	padding: 2em 0;
+	background-color: #e4eaea;
+}
 .pager li>a, .pager li>span {
 	background-color: #95a5a6;
 	border-radius: 3px;
