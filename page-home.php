@@ -14,12 +14,20 @@ get_header(); ?>
                 $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
                         </div>
                     </div>
                 </div>
@@ -63,8 +71,16 @@ get_header(); ?>
                 $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
+                <?php echo $feature_text_str; ?>
             </div>
             <div class="content">
                 <div class="container">
