@@ -117,6 +117,12 @@ footer .bc-info {
 	background-size: cover;
 	height: 440px;
 }
+.page-banner {
+    background-color: #e4eaea;
+    background-position: center center;
+    background-size: cover;
+    height: 180px;
+}
 .testimonial {
 	padding: 2em 0;
 	background-color: #e4eaea;
@@ -158,7 +164,7 @@ footer .bc-info {
 .feature-quote {
     font-family: 'Allura', cursive;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.4em;
     padding: 1em;
     text-shadow: 2px 2px 5px #000;
 }
