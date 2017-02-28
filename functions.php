@@ -89,6 +89,20 @@ function meta_boxes() {
             'priority' => 'high',
             'fields' => array(
                 array(
+                    'name' => 'Column left',
+                    'desc' => '',
+                    'id' => 'col-text-left',
+                    'type' => 'textarea',
+                    'std' => ''
+                ),
+                array(
+                    'name' => 'Column right',
+                    'desc' => '',
+                    'id' => 'col-text-right',
+                    'type' => 'textarea',
+                    'std' => ''
+                ),
+                array(
                     'name' => 'Feature image text',
                     'desc' => '',
                     'id' => 'feature-image-text',

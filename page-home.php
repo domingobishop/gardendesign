@@ -55,11 +55,19 @@ get_header(); ?>
                                         <?php the_content(); ?>
                                     </div>
                                 </article>
-                            <?php endwhile; ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php endwhile; ?>
         </section>
 
         <section id="garden-consulting">
@@ -103,12 +111,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                                endwhile;
-                                wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -154,12 +170,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -205,12 +229,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -251,12 +283,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -295,12 +335,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
