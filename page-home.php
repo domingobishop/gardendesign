@@ -338,11 +338,15 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="entry-content">
                             <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="entry-content">
                             <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                            </div>
                         </div>
                     </div>
                     <?php

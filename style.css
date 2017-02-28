@@ -138,6 +138,10 @@ footer .bc-info {
 .blue-bg h2, .green-bg h2 {
 	color: #fff;
 }
+.blue-bg ul {
+	margin-top: 0;
+	list-style-image: none;
+}
 .green-bg h2 {
 	color: #4b5793;
 }
