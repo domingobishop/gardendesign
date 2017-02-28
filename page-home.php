@@ -11,15 +11,23 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
             <?php if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
                         </div>
                     </div>
                 </div>
@@ -47,11 +55,19 @@ get_header(); ?>
                                         <?php the_content(); ?>
                                     </div>
                                 </article>
-                            <?php endwhile; ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php endwhile; ?>
         </section>
 
         <section id="garden-consulting">
@@ -60,11 +76,26 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <div class="container">
@@ -80,12 +111,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                                endwhile;
-                                wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -96,11 +135,26 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content blue-bg">
                 <div class="container">
@@ -116,12 +170,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -132,11 +194,26 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <div class="container">
@@ -152,12 +229,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -168,11 +253,26 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">';
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"';
             } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="banner" role="banner" <?php echo $bg_style; ?>>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 <?php echo $position; ?>">
+                            <?php echo $feature_text_str; ?>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content blue-bg">
                 <div class="container">
@@ -183,12 +283,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
@@ -199,12 +307,20 @@ get_header(); ?>
             while ( $your_query->have_posts() ) : $your_query->the_post();
             if ( has_post_thumbnail() ) {
                 $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');">'; ?>
+                $bg_style = 'style="background-image: url(' . $thumbnail_src[0] . ');"'; ?>
                 <div class="banner" role="banner" <?php echo $bg_style; ?>>
                 </div>
             <?php } else {
                 $bg_style = '';
-            } ?>
+            }
+            $feature_text = get_post_meta($post->ID, 'feature-image-text', true);
+            $position = get_post_meta($post->ID, 'feature-image-text-position', true);
+            if ($feature_text) {
+                $feature_text_str = '<div class="feature-quote">' . $feature_text . '</div>';
+            } else {
+                $feature_text_str = '';
+            }
+            ?>
             <div class="content green-bg">
                 <div class="container">
                     <div class="row">
@@ -219,12 +335,20 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <?php echo get_post_meta($post->ID, 'col-text-left', true); ?>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <?php echo get_post_meta($post->ID, 'col-text-right', true); ?>
+                        </div>
+                    </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
         </section>
