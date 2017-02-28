@@ -28,6 +28,9 @@
                     <a href="tel:0428446620">
                         Tel: 0428 446 620
                     </a>
+                    <p>
+                        <a href="https://www.facebook.com/gardenandoutdoorspaces/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
+                    </p>
                 </div>
             </div>
         </nav>
