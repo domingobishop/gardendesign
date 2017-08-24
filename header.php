@@ -30,6 +30,7 @@
                     </a>
                     <p>
                         <a href="https://www.facebook.com/gardenandoutdoorspaces/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
+                        <a href="https://www.instagram.com/garden_and_outdoor_spaces/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/instagram.png"></a>
                     </p>
                 </div>
             </div>
